@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: recrut-front
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: recrut-front
+  template:
+    metadata:
+      labels:
+        app: recrut-front
+    spec:
+      containers:
+        - name: recrut-front
+          image: dreamoonlab/recrut-front:1.0.0   # ← change me
+          ports:
+            - containerPort: 3000                     # adjust if your container listens on a different port

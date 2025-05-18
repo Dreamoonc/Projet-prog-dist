@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: authnode
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: authnode
+  template:
+    metadata:
+      labels:
+        app: authnode
+    spec:
+      containers:
+        - name: authnode
+          image: dreamoonlab/authnode:1.0.0          
+          ports:
+            - containerPort: 5000                    
+          env:
+
+            - name: PORT
+              value: "5000"
+
+            - name: DATABASE_URL
+              value: "postgresql://postgres:kilari12@postgres-svc:5432/ms_auth?schema=public"
+              
+
+            # ── security ───────────────────────────────────────────────
+            - name: JWT_SECRET               
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-secret           
+                  key: secret
+
+            - name: JWT_LIFETIME
+              value: "30day"
+
+
+            # - name: Kafka_Broker_Address
+            #   value: "kafka-svc:9092"        

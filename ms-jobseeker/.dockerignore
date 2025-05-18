@@ -1,0 +1,14 @@
+# --- VCS (git) ---
+.git
+.gitignore
+
+# --- IDE / éditeurs ---
+.idea
+.vscode
+
+# --- Build Maven / Gradle ---
+target          # le jar compilé, classes... inutile pour le build Docker
+
+# --- Fichiers système OS ---
+.DS_Store
+Thumbs.db

@@ -1,0 +1,18 @@
+# --- VCS ---
+.git
+.gitignore
+
+# --- IDE ---
+.idea
+.vscode
+
+# --- Dépendances NodeJS ---
+node_modules    # sera réinstallé via npm ci dans l’image
+
+# --- Logs éventuels ---
+npm-debug.log*
+yarn-*.log*
+
+# --- Fichiers système ---
+.DS_Store
+Thumbs.db

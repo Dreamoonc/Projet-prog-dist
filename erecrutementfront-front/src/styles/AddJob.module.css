@@ -1,0 +1,87 @@
+.logo_text{
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+    display: inline;
+    text-transform: uppercase;
+    margin-top: 0.8rem;
+
+}
+
+.logo_text span:nth-child(1){
+    color: #3A1078;
+}
+
+.logo_text span:nth-child(2){
+    color: #3795BD;
+}
+
+.logo{
+    display: inline;
+    height: auto;
+    width: 2.5rem;
+}
+
+.all_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 1rem; */
+    margin-left: 0.5rem;
+    width: fit-content;
+    
+    
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+}
+
+.title{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem;
+
+}
+
+.title_card{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border: 3px solid #4E31AA;
+    border-radius: 20px;
+    height: 70px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 55%;
+    z-index: 1;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 100;
+    position: absolute;
+    background-color: white;
+    margin-left: 20%;
+}
+.form_card{
+    padding: 3rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    border: #3795BD 1px solid;
+    border-radius: 0.5rem;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* add shadows */
+    box-shadow: 15px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+

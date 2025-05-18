@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: black 1px solid; */
+}
+/* ===============<navbar>================= */
+.logo_text{
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+    display: inline;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.logo_text span:nth-child(1){
+    color: #3A1078;
+}
+
+.logo_text span:nth-child(2){
+    color: #3795BD;
+}
+
+.logo{
+    display: inline;
+    height: auto;
+    width: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.all_logo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    width: fit-content;
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 1rem 2rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #aaa;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.nav_link{
+    text-decoration: none;
+    color: #000;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    transition: all 0.3s ease;
+
+
+}
+
+.nav_button:nth-child(1){
+    text-decoration: none;
+    color: #000;
+    padding-right: .5rem;
+    padding: .5rem;
+    transition: all 0.3s ease;
+
+}
+
+
+.link{
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+}
+
+.nav_link_main{
+    border-bottom: 2px solid #3A1078;
+    padding-bottom: 1.32rem;
+    text-decoration: none;
+    color: #000;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    transition: all 0.3s ease;
+    &:hover{
+        border-bottom: 2px solid #4E31AA;
+        padding-bottom: 1.32rem;
+        color: #4E31AA;
+    }
+}
+
+.nav_link:hover{
+    border-bottom: 2px solid #4E31AA;
+    padding-bottom: 1.32rem;
+    color: #4E31AA;
+}
+
+/* ===============</navbar>================= */
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+
+}
+
+.circle{
+    height: 120vh;
+    width: 100%;
+    z-index: -100;
+    margin: 0;
+    padding: 0;
+
+}
+
+.welcome_text{
+    position: absolute;
+    margin-top: -11rem;
+    font-size: 1.5rem;
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    display: block;
+    text-align: center;
+}
+
+.welcome_text h1 {
+    display: block;
+    margin:0 auto;
+    font-weight: bold;
+}
+.texxt{
+    display: block;
+    margin:0 auto;
+    font-weight: bold;
+}
+.welcome_text p{
+    font-family: 'poppins', sans-serif;
+    font-size: 1rem;
+    margin-top: 2rem;
+    
+}
+
+.welcome_text p span{
+    font-weight: bold;
+    font-weight: 600;
+    color: #3795BD;
+}
+
+.purple_text{
+    color: #4E31AA;
+}
+
+.blue_text{
+    color: #3795BD;
+}
+
+.search_bar{
+    position: absolute;
+    margin-top: 10rem;
+    margin-left: 2rem;
+    height: 3rem;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+
+.search_bar .search_textfield{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 25rem;
+
+}
+
+._logo_{
+    display: inline;
+    height: auto;
+    width: 2rem;
+}
+
+
+.statistics{
+    position: absolute;
+    z-index: 100;
+    border: 2px solid #3795BD ; 
+    border-radius: 30px;
+    width: 80%;
+    margin-top: 120vh;
+    background-color: #fff;
+}
+
+.statistics h1{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-family: 'libre baskerville', serif;
+    font-size: 2.5rem;
+}
+
+.statistics .statistics_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+
+}
+
+.statistics .card{
+    border: 1px solid #3795BD;
+    border-radius: 35px;
+    width: 25%;
+    height: 20vh;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+.card_text p:nth-child(1){
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'poppins', sans-serif;
+    font-style: normal;
+}
+
+Button[variant="primary"]{
+    
+    background-color: #4E31AA;
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+

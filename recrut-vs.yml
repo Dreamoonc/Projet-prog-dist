@@ -1,0 +1,40 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: masterinfo
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - recrut-gateway
+  http:
+  - match:
+    - uri:
+        prefix: /authnode
+    rewrite:
+      uri: /
+    route:
+    - destination:
+        host: authnode.default.svc.cluster.local
+        port:
+          number: 5000
+
+  - match:
+    - uri:
+        prefix: /jobseeker
+    rewrite:
+      uri: /
+    route:
+    - destination:
+        host: ms-jobseeker.default.svc.cluster.local
+        port:
+          number: 8082
+
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        host: recrut-front.default.svc.cluster.local
+        port:
+          number: 3000

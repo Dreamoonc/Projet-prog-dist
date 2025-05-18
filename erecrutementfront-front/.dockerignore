@@ -1,0 +1,18 @@
+# --- VCS ---
+.git
+.gitignore
+
+# --- IDE ---
+.idea
+.vscode
+
+# --- Dépendances ---
+node_modules
+
+# --- Artifacts de build (générés par npm run build / ng build) ---
+dist
+build
+
+# --- Fichiers système ---
+.DS_Store
+Thumbs.db

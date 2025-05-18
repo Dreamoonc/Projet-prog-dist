@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ms-jobseeker
+spec:
+  replicas: 1
+  selector:            
+    matchLabels:
+      app: ms-jobseeker
+  template:
+    metadata:
+      labels:
+        app: ms-jobseeker  
+    spec:
+      containers:
+        - name: ms-jobseeker
+          image: dreamoonlab/ms-jobseeker:1.0.0
+          ports:
+            - containerPort: 8082
+          env:
+            - name: DATABASE_URL
+              value: "postgresql://postgres:kilari12@postgres-svc:5432/ms_auth?schema=public"
+            - name: PORT
+              value: "8082"
